@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Today's Tasks -Task </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <div id="menu-container"></div> <!-- Placeholder for the menu -->
+
+        <main class="content">
+            <h1 >Today's Tasks</h1>
+            
+            <div class="task-box">
+                <textarea id="task-input" placeholder="Enter a new task..."></textarea>
+                
+                <!-- Category Dropdown -->
+                <select id="task-category">
+                    <option value="high">🔥 High Priority Task</option>
+                    <option value="medium">⚠️ Medium Priority Task</option>
+                    <option value="low">✅ Low Priority Task</option>
+                </select>
+
+                <button id="add-task">Add Task</button>
+            </div>
+            
+            <!-- Ordered list where tasks will be added w/ categories  -->
+            <ol id="task-list"></ol>
+            
+            <div class="tasks"> 
+            <dl>
+                <dt class="task red"><span class="task-title">🔥 High Priority Task</span></dt>
+                <dd><ol id="task-high" ></ol></dd>
+
+                <dt class="task yellow"><span class="task-title">⚠️ Medium Priority Task</span></dt>
+                <dd><ol id="task-med"></ol></dd>
+
+                <dt class="task green"><span class="task-title">✅ Low Priority Task</span></dt>
+                <dd><ol id="task-low"></ol></dd>
+
+            </dl>
+        </div>
+    </main>
+</div>
+    
+    <footer>            
+       <!-- <button id="clear-tasks">Clear Tasks</button> -->
+</footer>
+    
+    <!-- Link to the external JavaScript file -->
+    <script src="scriptFinal.js"></script>
+    
+</body>
+</html>

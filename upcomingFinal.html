@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upcoming Tasks</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <div id="menu-container"></div> <!-- Placeholder for the menu -->
+
+        <main class="content">
+            <h1>Upcoming Tasks</h1>
+            
+            <!-- For task input -->
+            <div class="task-box">
+                <textarea id="task-input" placeholder="Enter a new task..."></textarea>
+                
+            <!-- Category Dropdown -->
+                <select id="task-category">
+                    <option value="task">📂 Task</option>
+                    <option value="work">📂 Work</option>
+                    <option value="personal">🏡 Personal</option>
+                    <option value="school">📚 School</option>
+                </select>
+
+                <button id="add-task">Add Task</button>
+            </div>
+            
+
+
+          <!-- Description list for task categories and list them -->
+
+        <dl>
+            <dt class="task"><span class="task-title">Tasks</span></dt>
+            <dd><ol id="full-list"></ol></dd>
+
+            <dt class="task"><span class="task-title">📂 Work</span></dt>
+            <dd><ol id="work-tasks"></ol></dd>
+
+            <dt class="task"><span class="task-title">🏡 Personal</span></dt>
+            <dd><ol id="personal-tasks"></ol></dd>
+
+            <dt class="task"><span class="task-title">📚 School</span></dt>
+            <dd><ol id="school-tasks"></ol></dd>
+
+        </dl>
+    </main>
+</div>
+
+        <footer>            
+       <!-- <button id="clear-tasks">Clear Tasks</button> -->
+</footer>
+    <!-- Link to the external JavaScript file -->
+    <script src="scriptFinal.js"></script>
+</body>
+</html>

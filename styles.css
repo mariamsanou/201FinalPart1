@@ -1,0 +1,150 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #A7D8F1;
+    height: auto;
+}
+
+h1, h2{
+    text-align: center;
+}
+
+/* Title for the task */
+.task-title {
+
+            font-size: 20px; 
+            font-weight: bold;
+        margin-left: 230px;
+
+        }
+
+/* Sidebar Styling */
+.sidebar {
+    width: 200px;
+    background: #7ec4e8;
+    color: black;
+    padding: 15px;
+    height: 100vh;
+    position: fixed;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px;
+    border-bottom: 1px solid white;
+}
+
+/* Active Menu Item Styling NEED TO FIX! */
+.sidebar ul li.active {
+    background: yellow; /* Change background for active item */
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Hover Effect for Menu Items */
+.sidebar ul li:hover {
+    background: #444; /* w/t background color on hover */
+}
+
+/* Content Area */
+.content {
+    margin-left: 230px; /* Space for the sidebar */
+    padding: 20px;
+}
+
+/* Task Container */
+.task-container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.task-box {
+    margin-bottom: 20px;
+}
+
+/* Style for the GIF */
+#gif {
+    width: auto; /* Make the image take the full width of its container */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 10%; /* Ensure the image does not exceed the height of the container */
+    max-height: 30%;
+    object-fit: cover; /* Cover the container while maintaining aspect ratio */
+    margin-left: 230px;
+}
+
+/* Textarea Styling */
+textarea {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #A7D8F1;
+}
+
+/* Task List Formatting */
+ul#task-list {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid white;
+    padding: 10px;
+    text-align: left;
+    color: #ba2592;
+}
+
+/* Image Styling */
+img {
+    width: 150px;
+    height: auto;
+    display: block;
+}
+
+/* Multimedia stle */
+
+iframe {
+    display: block;
+    width: 100%; /* Make the iframe responsive */
+    height: 500px; /* Set a default height */
+}
+
+footer{
+    text-align: center;
+    margin-left: 100px;
+}
+
+/* Styleing for responsive design */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 30%; /* Full width on smaller screens */
+        height: 100%; /* Adjust height */
+
+    }
+    .content {
+        margin-left: 230px; 
+    }
+    #gif {
+        margin-left: 230px; /* Center the GIF on smaller screens */
+        width: 60%; /* Full width on smaller screens */
+        height: 60%; /* Adjust height */
+    }
+
+
+}
