@@ -40,9 +40,9 @@ h1, h2{
     border-bottom: 1px solid white;
 }
 
-/* Active Menu Item Styling NEED TO FIX! */
+/* Active Menu Item Styling  */
 .sidebar ul li.active {
-    background: yellow; /* Change background for active item */
+    background: yellow; /* + background change for active item */
 }
 
 .sidebar ul li a {
@@ -50,7 +50,7 @@ h1, h2{
     text-decoration: none;
 }
 
-/* Hover Effect for Menu Items */
+/* Hover effect for menu */
 .sidebar ul li:hover {
     background: #444; /* w/t background color on hover */
 }
@@ -72,13 +72,13 @@ h1, h2{
     margin-bottom: 20px;
 }
 
-/* Style for the GIF */
+/* Style for the GIF needed lots of adjustments */
 #gif {
-    width: auto; /* Make the image take the full width of its container */
-    height: auto; /* Maintain aspect ratio */
-    max-height: 10%; /* Ensure the image does not exceed the height of the container */
+    width: auto; 
+    height: auto; 
+    max-height: 10%; 
     max-height: 30%;
-    object-fit: cover; /* Cover the container while maintaining aspect ratio */
+    object-fit: cover; 
     margin-left: 230px;
 }
 
@@ -91,7 +91,7 @@ textarea {
     background-color: #A7D8F1;
 }
 
-/* Task List Formatting */
+/* Task List format*/
 ul#task-list {
     list-style-type: disc;
     padding-left: 20px;
@@ -117,6 +117,16 @@ img {
     display: block;
 }
 
+/* Chcek mark Styling */
+.check-button {
+    margin-left: 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+
 /* Multimedia stle */
 
 iframe {
@@ -125,6 +135,7 @@ iframe {
     height: 500px; /* Set a default height */
 }
 
+/* footer stle if i keep it */
 footer{
     text-align: center;
     margin-left: 100px;
@@ -133,18 +144,29 @@ footer{
 /* Styleing for responsive design */
 @media (max-width: 768px) {
     .sidebar {
-        width: 30%; /* Full width on smaller screens */
-        height: 100%; /* Adjust height */
-
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding: 10px;
     }
+
     .content {
-        margin-left: 230px; 
+        margin-left: 0;
+        padding: 15px;
     }
+
+    .task-title {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    footer {
+        margin-left: 0;
+    }
+
     #gif {
-        margin-left: 230px; /* Center the GIF on smaller screens */
-        width: 60%; /* Full width on smaller screens */
-        height: 60%; /* Adjust height */
+        margin-left: 0;
+        width: 100%;
+        height: auto;
     }
-
-
 }
